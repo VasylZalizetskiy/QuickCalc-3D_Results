@@ -1,0 +1,223 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    MENUITEM "Input",                       ID_INPUT
+    POPUP "Calc"
+    BEGIN
+        MENUITEM "Run",                         ID_RUN
+        MENUITEM "Result",                      ID_RESULT
+    END
+    MENUITEM "Info",                        ID_INFO
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        ID_OPEN
+        MENUITEM "Save",                        ID_SAVE
+        MENUITEM "Rename",                      ID_RENAME
+        MENUITEM "Quit",                        ID_QUIT
+    END
+    MENUITEM "Help",                        ID_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MENU1 TOOLBAR 64, 64
+BEGIN
+    BUTTON      ID_INPUT
+    BUTTON      ID_RUN
+    BUTTON      ID_RESULT
+    BUTTON      ID_INFO
+    SEPARATOR
+    BUTTON      ID_OPEN
+    BUTTON      ID_SAVE
+    SEPARATOR
+    BUTTON      ID_RENAME
+    BUTTON      ID_QUIT
+    BUTTON      ID_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MENU1               BITMAP                  "C:\\Users\\ZVV\\Desktop\\Rekalo\\Main\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ID_INFO                 "Про програму"
+    ID_INPUT                "Ввести дані"
+    ID_QUIT                 "Вихід"
+    ID_RUN                  "Запустити виконання"
+    ID_RESULT               "Результат"
+    ID_OPEN                 "Відкрити"
+    ID_SAVE                 "Зберегти"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RENAME               "Перейменувати"
+END
+
+STRINGTABLE
+BEGIN
+    ID_HELP                 "Допомога"
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Украинский (Украина) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 255, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,189,42,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,190,100,50,14
+    EDITTEXT        IDC_EDIT1,7,36,113,78,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "M=",IDC_STATIC,10,27,12,8
+    LTEXT           "L=",IDC_STATIC,138,27,10,8
+    LTEXT           "2    3    4",IDC_STATIC,137,34,29,8
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,129,41,41,15
+    LTEXT           "N=",IDC_STATIC,137,59,11,8
+    LTEXT           "2     3     4     5     6     7     8     9",IDC_STATIC,137,66,103,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,130,73,115,15
+    LTEXT           "J=",IDC_STATIC,135,91,10,8
+    EDITTEXT        IDC_EDIT2,135,100,30,14,ES_AUTOHSCROLL
+    LTEXT           "Знаходження кількості  елементів в j-му стовпчику матриці, які знаходяться в інтервалі (0,9).",IDC_STATIC,8,8,240,17
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,198,155,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,252,155,50,14
+    EDITTEXT        IDC_EDIT1,7,7,295,147,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "MFCApplication1.ico"
+#endif    // Украинский (Украина) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

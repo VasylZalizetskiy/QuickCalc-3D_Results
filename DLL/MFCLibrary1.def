@@ -1,0 +1,7 @@
+; MFCLibrary1.def: объ€вл€ет параметры модул€ дл€ DLL.
+
+LIBRARY      "MFCLibrary1"
+
+EXPORTS
+    ; —юда можно направл€ть €вные операции экспорта
+	count @1.
